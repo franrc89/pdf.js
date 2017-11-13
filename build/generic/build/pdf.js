@@ -4530,7 +4530,7 @@ var renderTextLayer = function renderTextLayerClosure() {
     styleBuf[7] = style.fontFamily;
     textDivProperties.style = styleBuf.join('');
     textDiv.setAttribute('style', textDivProperties.style);
-    textDiv.textContent = geom.str;
+    textDiv.textContent = geom.str + ' ';
     if (getDefaultSetting('pdfBug')) {
       textDiv.dataset.fontName = geom.fontName;
     }
